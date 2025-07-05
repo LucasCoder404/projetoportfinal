@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Sperandio - Site Pessoal</title>
+  <style>
+    :root {
+      --primaria: #5624d0;
+      --primaria-clara: #a084e8;
+      --cinza-claro: #f2f2f2;
+      --branco: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: var(--cinza-claro);
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: var(--primaria);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: var(--primaria-clara);
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      padding: 1rem;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: var(--primaria);
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: var(--branco);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      transition: border 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      border-color: var(--primaria);
+      outline: none;
+    }
+    form input[type="submit"] {
+      margin-top: 1rem;
+      background-color: var(--primaria);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form input[type="submit"]:hover {
+      background-color: #3e1b99;
+    }
+    footer {
+      background-color: var(--primaria);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .projetos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .card {
+      background-color: var(--branco);
+      border: 1px solid var(--primaria-clara);
+      border-radius: 8px;
+      padding: 1rem;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 1rem;
+      display: block;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lucas de Oliveira Sperandio</h1>
+    <p>Bem-vindo ao meu site pessoal!</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#formacao">Formação</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Perfil Técnico e Profissional</h2>
+    
+    <div class="profile-header">
+      <p><strong>Nome:</strong> Lucas de Oliveira Sperandio<br>
+      <strong>Idade:</strong> 18 anos<br>
+      <strong>Localização:</strong> Alto Garças, Mato Grosso</p>
+    </div>
+
+    <h3>Áreas de Competência Técnica</h3>
+    <ul>
+      <li><strong>Desenvolvimento de Software:</strong> Domínio prático em lógica de programação, algoritmos e estruturas de dados com aplicação para solução de problemas computacionais</li>
+      <li><strong>Eletromecânica Industrial:</strong> Conhecimentos aplicados em sistemas elétricos industriais com ênfase em controle de processos e eficiência energética</li>
+    </ul>
+
+    <h3>Atividades Complementares Estruturadas</h3>
+    <ul>
+      <li><strong>Otimização Cognitiva:</strong> Prática sistemática de artes marciais (Krav Maga/Jiu-Jitsu) e condicionamento físico para desenvolvimento de disciplina operacional e gestão de estresse em ambientes de alta pressão</li>
+      <li><strong>Pesquisa Aplicada:</strong> Estudo de teoria musical computacional para modelagem de algoritmos generativos e análise de padrões sonoros</li>
+      <li><strong>Análise Técnica:</strong> Revisão crítica de produções cinematográficas com foco em estruturas narrativas e técnicas de pós-produção digital</li>
+    </ul>
+
+    <h3>Competências Comportamentais</h3>
+    <div class="soft-skills">
+      <ul>
+        <li><strong>Resolução Algorítmica de Problemas:</strong> Capacidade de decompor desafios complexos em etapas executáveis</li>
+        <li><strong>Gestão de Ciclo de Desenvolvimento:</strong> Disciplina na implementação iterativa de projetos técnicos</li>
+        <li><strong>Colaboração Técnica:</strong> Habilidade de integração em equipes multidisciplinares com comunicação precisa de conceitos especializados</li>
+        <li><strong>Resiliência Operacional:</strong> Manutenção de desempenho estável sob condições de restrição temporal ou técnica</li>
+        <li><strong>Inovação Sistêmica:</strong> Criatividade aplicada à integração de tecnologias heterogêneas (TI + sistemas industriais)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <ul>
+      <li>Ensino Médio completo - Escola Estadual Dr. Ytrio Corrêa</li>
+      <li>Cursando Técnico em Eletromecânica Industrial (fase prática) - Atuando como eletricista</li>
+      <li>Graduando em Análise e Desenvolvimento de Sistemas - Uninter</li>
+      <li>Inglês - Nível básico</li>
+    </ul>
+    <h3>Cursos complementares</h3>
+    <ul>
+      <li>Big Data em Apoio à Tomada de Decisão - EV.G/ENAP (25h)</li>
+      <li>Lógica de programação: explore funções e listas - Alura</li>
+      <li>Aprender a aprender: técnicas para seu autodesenvolvimento - Alura</li>
+      <li>HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags - Alura</li>
+      <li>Praticando lógica de programação: Challenge amigo secreto - Alura</li>
+      <li>HTML e CSS: trabalhando com responsividade e publicação de projetos - Alura</li>
+      <li>HTML e CSS: cabeçalho, footer e variáveis CSS - Alura</li>
+      <li>HTML e CSS: Classes, posicionamento e Flexbox - Alura</li>
+      <li>ChatGPT: otimizando a qualidade dos resultados - Alura</li>
+      <li>Git e GitHub: compartilhando e colaborando em projetos - Alura</li>
+      <li>Lógica de programação: mergulhe em programação com JavaScript - Alura</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="projetos">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/question-mark.png" alt="Jogo do Número Secreto">
+        <h3>Jogo do Número Secreto</h3>
+        <p>Um jogo em JavaScript onde o usuário tenta adivinhar um número aleatório. Usa lógica condicional, loops e interação com o usuário.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/qr-code.png" alt="Gerador de QR Code">
+        <h3>Gerador de QR Code</h3>
+        <p>Projeto que permite gerar códigos QR personalizados usando entrada de texto. Desenvolvido com HTML, CSS e API externa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Lucas de Oliveira Sperandio</p>
+  </footer>
+
+  <script>
+    // Validação básica do formulário
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      
+      if(!nome || !email) {
+        alert('Por favor, preencha todos os campos obrigatórios');
+        return;
+      }
+      
+      alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
